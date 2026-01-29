@@ -1,17 +1,73 @@
 # Insurance Claim Management System
 
-A comprehensive, production-ready Flutter Web application for managing hospital insurance claims. Built with modern Flutter practices, this app demonstrates advanced architecture patterns, state management, data persistence, and beautiful UI/UX.
+A comprehensive, production-ready Flutter Web application for managing hospital insurance claims. Built with modern Flutter practices, this app demonstrates advanced architecture patterns, state management, Firebase Firestore backend, and beautiful modern UI/UX.
+
+## 🔗 Live Demo & Resources
+
+| Resource | Link |
+|----------|------|
+| **🌐 Live Application** | [https://insurance-claim-app-gk.web.app](https://insurance-claim-app-gk.web.app) |
+| **📦 GitHub Repository** | [https://github.com/GAURAV834KUMAR/insurance-claim-app](https://github.com/GAURAV834KUMAR/insurance-claim-app) |
 
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 ![Material 3](https://img.shields.io/badge/Material%203-757575?style=for-the-badge&logo=materialdesign&logoColor=white)
+
+---
+
+## ✅ Assignment Requirements Checklist
+
+### Task Requirements
+| Requirement | Status | Implementation |
+|-------------|--------|----------------|
+| Creation of patient claim | ✅ Complete | Full form with patient name, policy number, claim date |
+| Management of Bills | ✅ Complete | Add/Edit/Delete bills with description and amount |
+| Management of Advances | ✅ Complete | Advance paid field with validation |
+| Management of Settlements | ✅ Complete | Settlement amount tracking |
+| Management of Pending amounts | ✅ Complete | Auto-calculated: Total - Advance - Settlement |
+
+### Claim Status Workflow
+| Status | Status | Transitions |
+|--------|--------|-------------|
+| Draft | ✅ | → Submitted |
+| Submitted | ✅ | → Approved / Rejected |
+| Approved | ✅ | → Partially Settled |
+| Rejected | ✅ | Terminal state |
+| Partially Settled | ✅ | → Settled |
+| Settled | ✅ | Terminal state |
+
+### Features
+| Feature | Status | Implementation |
+|---------|--------|----------------|
+| Add/edit bills | ✅ Complete | Dialog-based bill management with CRUD operations |
+| Automatic total calculations | ✅ Complete | Real-time calculation of totals, pending amounts |
+| Status transitions | ✅ Complete | Strict workflow with validation |
+| Dashboard view of all claims | ✅ Complete | List view with filters, search, sort |
+
+### Technical Requirements
+| Requirement | Status | Details |
+|-------------|--------|---------|
+| Built using Flutter | ✅ | Flutter 3.10.7+ |
+| Publicly deployed (Web) | ✅ | Firebase Hosting |
+| Accessible via live link | ✅ | [insurance-claim-app-gk.web.app](https://insurance-claim-app-gk.web.app) |
+
+### Deliverables
+| Deliverable | Status | Link |
+|-------------|--------|------|
+| Live application link | ✅ | [https://insurance-claim-app-gk.web.app](https://insurance-claim-app-gk.web.app) |
+| GitHub repository | ✅ | [https://github.com/GAURAV834KUMAR/insurance-claim-app](https://github.com/GAURAV834KUMAR/insurance-claim-app) |
+| Video walkthrough (2-3 min) | 📹 | *To be added* |
+
+---
 
 ## ✨ Key Highlights
 
-- **Data Persistence**: Claims automatically saved to browser's localStorage
+- **Cloud Database**: Firebase Firestore for real-time data sync
+- **Modern UI**: Glassmorphism design with premium styling
 - **Dark Mode**: Toggle between light and dark themes
 - **Analytics Dashboard**: Visual insights with custom-built charts
-- **Export Functionality**: Download claims as CSV or individual reports
+- **Export Functionality**: Download claims as CSV
 - **Custom Animations**: Smooth transitions and animated charts
 - **Responsive Design**: Works on all screen sizes
 
@@ -263,8 +319,16 @@ This project is created as part of an internship assignment and is intended for 
 
 ## 👨‍💻 Author
 
-Built with ❤️ using Flutter and Dart
+**Gaurav Kumar**
+
+Built with ❤️ using Flutter, Dart, and Firebase
 
 ---
 
-**Note**: This application demonstrates professional-grade Flutter development practices including clean architecture, state management, data persistence, responsive design, and custom UI components.
+## 📹 Video Walkthrough
+
+> A 2-3 minute video walkthrough demonstrating all features will be added here.
+
+---
+
+**Note**: This application demonstrates professional-grade Flutter development practices including clean architecture, state management, cloud database integration, responsive design, and custom UI components.
